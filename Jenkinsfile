@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
+        stage('Clone Repo') {
             steps {
                 git 'https://github.com/yourusername/lakme-clone.git'
             }
@@ -22,11 +22,10 @@ pipeline {
             }
         }
 
-        stage('Run New Container') {
+        stage('Run Container') {
             steps {
                 bat 'docker run -d -p 8081:80 --name lakme-container lakme-clone'
             }
         }
-
     }
 }
