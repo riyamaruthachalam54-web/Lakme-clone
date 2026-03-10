@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/yourusername/lakme-clone.git'
+                git 'https://github.com/riyamaruthachalam54-web/Lakme-clone.git'
             }
         }
 
